@@ -1,6 +1,10 @@
 import java.util.Scanner;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 public class AlphaMechanic {
 
+	private static DecimalFormat df = new DecimalFormat("0.00");
+	
 	public static void main(String[] args) {
 		//objects
 		Scanner keyboard = new Scanner(System.in);
@@ -85,28 +89,49 @@ public class AlphaMechanic {
 		}
 
 		//parts repair
-		int number_parts = 0;
 		System.out.println("*****Parts*****");
-		System.out.print("How many parts were replaced:\t");
-		number_parts = keyboard.nextInt();
-		//number_parts--;
-		int[] parts = new int [number_parts];
-		int q = 1;
-		for (int y = 0; y < number_parts; y++) {
-			System.out.print("Enter the part "+ q  + " cost:\t\t");
-			parts[y] = keyboard.nextInt();
-			q++;
-		}
-
+		System.out.print("Parts Description: \t");
+		String part_description = keyboard.nextLine();
+		System.out.print("Total Price: \t\t");
+		String part_price = keyboard.nextLine();
+		
+		//new page
+				for (int x = 0; x < 2; x++) {
+					System.out.println(" ");
+				}
+				
+		//labor
+		System.out.println("*****Labor*****");
+		System.out.print("Labor Describtion: \t");
+		String labor_description = keyboard.nextLine();
+		System.out.print("Total price: \t\t");
+		String labor_price = keyboard.nextLine();
+		
 		//new page
 		for (int x = 0; x < 2; x++) {
 			System.out.println(" ");
 		}
-		keyboard.nextLine();
 		
-		//labor
-		System.out.println("*****Labor*****");
-		//for (int p = 0; )
+		//convert string prices to double
+		double part_price1 = Double.valueOf(part_price);
+		double labor_price1 = Double.valueOf(labor_price);
+		
+		//adjusting tax format
+		double tax = Double.valueOf(tax_percent);
+		tax = tax * 0.01;
+		
+		//Calculations
+		double sub_total;
+		double tax_total;
+		double total_price;
+		sub_total = part_price1 + labor_price1;
+		tax_total = sub_total * tax;
+			//rounding tax
+			String tax_final = df.format(tax_total);
+			double tax_final1 = Double.valueOf(tax_final);
+		total_price = sub_total + tax_final1;
+		
+		
 		
 		
 		
