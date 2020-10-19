@@ -131,9 +131,39 @@ public class AlphaMechanic {
 			double tax_final1 = Double.valueOf(tax_final);
 		total_price = sub_total + tax_final1;
 		
+		//new page
+				for (int x = 0; x < 2; x++) {
+					System.out.println(" ");
+				}
 		
+		//printing receipt
+		System.out.println("Printing Receipt.........");
 		
+		//new page
+				for (int x = 0; x < 2; x++) {
+					System.out.println(" ");
+				}
 		
+		//print final product
+		System.out.println(shop_name);
+		System.out.println(" ");
+		System.out.println("     " + shop_address + " " + shop_city + ", " + shop_state + shop_zipcode);
+		System.out.println("     " + "Phone: " + shop_number);
+		System.out.println("     " + "Email: " + shop_email);
+		System.out.println("     " + "Date Written: " + receipt_date);
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("     " + "Customer: " + customer_first_name + " " + customer_last_name);
+		System.out.println("     " + "Cell: " + customer_cell_number);
+		System.out.println("     " + "Email: " + customer_email);
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("     " + "Vehicle: " + car_year + " " + car_make + " " + car_model);
+		System.out.println("     " + "License Plate: " + license_plate);
+		System.out.println("     " + "VIN: " + vin_number);
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("     " + "*Description of Parts*");
 		
 		
 		
