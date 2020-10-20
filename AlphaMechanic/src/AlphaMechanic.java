@@ -146,8 +146,9 @@ public class AlphaMechanic {
 		
 		//print final product
 		System.out.println(shop_name);
-		System.out.println(" ");
-		System.out.println("     " + shop_address + " " + shop_city + ", " + shop_state + shop_zipcode);
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("     " + shop_address + " " + shop_city + ", " + shop_state + " " + shop_zipcode);
 		System.out.println("     " + "Phone: " + shop_number);
 		System.out.println("     " + "Email: " + shop_email);
 		System.out.println("     " + "Date Written: " + receipt_date);
@@ -164,6 +165,22 @@ public class AlphaMechanic {
 		System.out.println("----------------------------------------------------------------------------------------");
 		System.out.println("----------------------------------------------------------------------------------------");
 		System.out.println("     " + "*Description of Parts*");
+		System.out.println("     " + part_description);
+		System.out.println("     " + "Total Price of Parts: " + "$" + part_price);
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("     " + "*Labor Description*");
+		System.out.println("     " + labor_description);
+		System.out.println("     " + "Total Price of Labor: " + "$" + labor_price);
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("----------------------------------------------------------------------------------------");
+		System.out.println("     " + "Parts Amount: \t" + "$" + part_price);
+		System.out.println("     " + "Labor Amount: \t" + "$" + labor_price);
+		System.out.println("     " + "Sub Total: \t" + "$" + sub_total);
+		System.out.println("     " + "Total Tax: \t" + "$" + tax_final1);
+		System.out.println("     " + "TOTAL: \t\t" + "$" + total_price);
+		
+		
 		
 		
 		
